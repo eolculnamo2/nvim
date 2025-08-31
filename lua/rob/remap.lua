@@ -19,6 +19,7 @@ vim.keymap.set("n", "<leader>/",
 vim.keymap.set("v", "<leader>/", "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<cr>")
 vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename)
 vim.keymap.set("n", "<leader>la", vim.lsp.buf.code_action)
+vim.keymap.set("n", "gl", vim.diagnostic.open_float)
 -- vim.keymap.set("n", "gi", vim.lsp.buf.implementation)
 
 vim.keymap.set("n", "<leader>bi", "<Cmd>BufferPick<CR>")
@@ -37,5 +38,8 @@ vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
 vim.keymap.set("n", "<leader>fs", builtin.git_files, {})
 vim.keymap.set("n", "<leader>fo", builtin.oldfiles, {})
+
+vim.keymap.set("n", "q", "<Cmd>DiffviewClose<CR>")
+
 
 vim.api.nvim_set_option("clipboard", "unnamed")
