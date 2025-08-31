@@ -5,8 +5,8 @@ return {
             'echasnovski/mini.icons',
             'nvim-lua/plenary.nvim'
         },
-        config = function ()
-            require'alpha'.setup(require'alpha.themes.theta'.config)
+        config = function()
+            require 'alpha'.setup(require 'alpha.themes.theta'.config)
         end
     }
 }

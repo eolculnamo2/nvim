@@ -35,4 +35,3 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.conceallevel = 1
 
 vim.opt.rtp:prepend("/Users/robbertram/.opam/5.2.0/share/ocp-indent/vim")
-

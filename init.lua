@@ -1,6 +1,2 @@
- require("rob")
- require("config")
-
-
-
-
+require("rob")
+require("config")
