@@ -30,6 +30,10 @@ vim.keymap.set("n", "<leader>bl", "<Cmd>BufferCloseBuffersLeft<CR>")
 vim.keymap.set("n", "<leader>br", "<Cmd>BufferCloseBuffersRight<CR>")
 vim.keymap.set("n", "<leader>bx", "<Cmd>BufferClose<CR>") -- close current
 
+-- w for who
+vim.keymap.set("n", "<leader>ww", "<Cmd>BlameToggle window<CR>")
+vim.keymap.set("n", "<leader>wv", "<Cmd>BlameToggle virtual<CR>") -- close current
+
 
 local builtin = require('telescope.builtin')
 vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
