@@ -7,6 +7,18 @@ return {
             "MunifTanjim/nui.nvim",
             "nvim-tree/nvim-web-devicons", -- optional, but recommended
         },
-        lazy = false,                -- neo-tree will lazily load itself
+        lazy = false,                      -- neo-tree will lazily load itself
+        opts = {
+            filesystem = {
+                follow_current_file = {
+                    enabled = true,
+                },
+                filtered_items = {
+                    hide_by_pattern = {
+                        "**/*.bs.js"
+                    }
+                }
+            }
+        }
     }
 }

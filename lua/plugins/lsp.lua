@@ -14,7 +14,9 @@ return {
                         group = vim.api.nvim_create_augroup("LspFormatOnSave", { clear = true }),
                         buffer = bufnr,
                         callback = function()
-                            vim.lsp.buf.format({ bufnr = bufnr })
+                            if vim.bo.filetype ~= "go" then
+                                vim.lsp.buf.format({ bufnr = bufnr })
+                            end
                         end,
                     })
                 end
