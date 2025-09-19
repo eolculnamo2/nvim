@@ -4,7 +4,7 @@ return {
         dependencies = { "hrsh7th/cmp-nvim-lsp" },
         config = function()
             local lspconfig = require("lspconfig")
-            local capabilities = require("cmp_nvim_lsp").default_capabilities()
+            -- local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
             local on_attach = function(client, bufnr)
                 local opts = { noremap = true, silent = true, buffer = bufnr }
@@ -36,7 +36,7 @@ return {
             for _, server_name in ipairs(servers) do
                 lspconfig[server_name].setup {
                     on_attach = on_attach,
-                    capabilities = capabilities,
+                    -- capabilities = capabilities,
                 }
             end
         end
